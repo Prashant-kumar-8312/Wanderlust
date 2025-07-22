@@ -1,0 +1,43 @@
+<% layout("/layout/boilerplate") %>
+
+
+<style>
+    .btn-login{
+         background-color: red;
+         border-radius: 16px 18px 15px 18px;
+    }
+
+    .filter:hover{
+    opacity: 1;
+    cursor: pointer;
+  }
+
+
+</style>
+<div class="row mt-3">
+    <h1 class="col-6 offset-3"> login on wanderlust</h1>
+    <div class="col-6 offset-3">
+         <form action="/login" method="POST" >
+
+             <div class="mb-3">
+        <label for="username" class="form-label">username</label>
+        <input name="username" id="username" type="text" class="form-control" required />
+        </div>
+
+         
+
+         <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input name="password" id="password" type="password" class="form-control" required />
+        </div>
+
+        <button class="btn-login btn-succss">login</button>
+
+
+
+
+
+         </form>
+    </div>
+</div>
+
