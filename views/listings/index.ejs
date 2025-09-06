@@ -30,18 +30,25 @@
     display: none;
   }
 
+  .Page{
+    padding-left: 3rem;
+    padding-right:2rem;
+  }
+
   .tax-toggle {
     border: 1px solid black;
     border-radius: 1rem;
     height: 3.5rem;
+    width: 22rem;
     padding: 1rem;
-    margin-left: 5rem;
-    display: flex;
-    align-items: center;
-  }
+    margin-left: 47rem;
+    margin-top: 1rem;
+   display: flex; 
+    /* align-items: center; */
+  } 
 </style>
 
-<form>
+<!-- <form>
      <div id="filters">
      <div class="filter">
      <div><button  name="Trending"><i class="fa-solid fa-fire"></i></div>
@@ -98,7 +105,7 @@
 
   </div>
 
-</form>
+</form> -->
 
   <div class="tax-toggle">
   <div class="form-check-reverse form-switch">
@@ -110,7 +117,7 @@
 
 
 </div>
-    <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 mt-3">
+    <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 mt-3 Page">
     <% for(let listing of allListings) { %>
     <a href="/listings/<%= listing._id%>" class="listing-link">
     <div class="card col listing-card">
